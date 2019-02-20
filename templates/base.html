@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{title}}</title>
+  <link rel="stylesheet" type="text/css" href="{{  url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+  {% if 'email' in session %}
+  <div class="nav1">
+    <form action="/logout" method="POST">
+      <input type="submit" value="Logout">
+      <span>{{ session['email'] }}</span>
+    </form>
+  </div>
+  {% endif %}
+  <div class="nav">
+    <a href="{{ url_for('index') }}">Home</a>
+    |
+    <a href="{{ url_for('blog') }}">Main Blog Page</a>
+    |
+    <a href="{{ url_for('newpost') }}">Add a Blog Entry</a>
+    {% if 'email' not in session %}
+    <div>
+      <h4><a href="/login">Login</a> | <a href="/signup">Signup</a></h4>
+    </div>
+    {% endif %}
+  </div>
+
+  <div class="main">
+    {% with messages = get_flashed_messages() %}
+    <ul>
+      {% for message in messages %}
+      <li class="error">{{ message }}</li>
+      {% endfor %}
+    </ul>
+    {% endwith %}
+
+    {% block content%}{% endblock %}
+  </div>
+
+</body>
+
+</html>

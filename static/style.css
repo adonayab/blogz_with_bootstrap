@@ -1,0 +1,135 @@
+.main {  
+  padding: 3in;
+  margin: auto auto;
+  width: 540px;
+  font: 20px "Courier New", monospace;
+  font-weight: bold;
+  border-radius: 10px;
+  color: antiquewhite;
+}
+
+.nav {
+  padding: 0.7in;
+  color:  rgb(149, 199, 201);
+  float: left;
+}
+
+.nav1 {
+  padding: 0.3in;
+  float: right;  
+}
+
+.blog {
+  margin: 10px 0;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 2px;
+  background-color: #5a5e66f3;
+  resize: vertical;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: url(/static/big-black.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 120vh;
+  position: relative;
+}
+
+.add_blog {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+h2, h4 {
+  font-family: Georgia;
+  color: gray;
+}
+
+h1 {
+  text-align: center;
+  font-family: Georgia;
+  color: gray;
+}
+
+h6, h5 {
+  font-family: Georgia;
+  color: rgb(128, 209, 182);
+}
+
+.pubs {
+  font-family: sans-serif;
+  color: rgb(167, 172, 149);
+}
+
+.error {
+  color: rgb(209, 164, 164);
+}
+
+a {
+  color: rgb(149, 199, 201);
+  font-family: sans-serif;
+}
+
+.pag {
+  color: white;
+  font-weight: normal;
+}
+
+span {
+  color: antiquewhite;
+}
+
+textarea {
+  margin: 10px 0;
+  width: 540px;
+  height: 130px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  background-color: #e9ebf0be;
+  resize: none;
+  font-size: 16px;
+}
+
+input[type=text] {
+  width: 530px;
+  margin: 10px 0;
+  padding: 5px;
+  background-color: #f1f1f171;
+  border: none;
+  border-radius: 3px;
+  color: antiquewhite;
+
+}
+
+input[type=password], input[type=email] {
+  width: 200px;
+  margin: 10px 0;
+  padding: 5px;
+  background-color: #f1f1f171;
+  border: none;
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+}
+
+input[type=submit] {
+  background-color: rgb(94, 169, 179);
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+}
