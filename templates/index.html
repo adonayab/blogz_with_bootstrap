@@ -1,13 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h1>The Blogz</h1>
 
-
-<h4>Bloggers</h4>
+<h4>Blogz Bloggers</h4>
 
 {% for user in users %}
- <p><a href="/blog?user={{ user.id }}"> {{ user.email }} </a></p> 
+ <p><a class="nav-item nav-link" href="/blog?user={{ user.id }}"> {{ user.email }} </a></p> 
 {% endfor %}
 
 

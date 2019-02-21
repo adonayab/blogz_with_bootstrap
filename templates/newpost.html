@@ -5,18 +5,17 @@
 <h1>Add a Blog Entry</h1>
 
 <form action="/newpost" method="POST">
-  <label for="title">
-    <span class="add_blog">Blog Title </span>
-    <br>
-    <input type="text" name="title" id="title">
-  </label>  
-  <br>
-  <br>
-  <span class="add_blog">Your new blog</span>
-  <br>
-  <textarea name="body" id="body" cols="30" rows="10"></textarea>
-  <br>
-  <input type="submit" value="Post">
+  <div class="form-group">
+    <label for="title">Blog Title</label>
+    <input type="text" name="title" id="title" class="form-control">
+  </div>
+  <div class="form-group">
+    <label class="add_blog">Your new blog</label>
+    <textarea name="body" id="body" cols="30" rows="10" class="form-control"></textarea>
+  </div>
+  <div class="form-group">
+    <input type="submit" value="Post">
+  </div>
 </form>
 
 {% endblock %}

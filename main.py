@@ -127,7 +127,7 @@ def blog():
     if user_blogs:
         return render_template('blog.html', title="Blog", blog_title=user_name.owner.email, user_blogs=user_blogs)
     else:
-        return render_template('blog.html', title="Blogz", blogs=blogs, blog_title='Blogz')
+        return render_template('blog.html', title="Blogz", blogs=blogs)
 
 
 if __name__ == "__main__":
