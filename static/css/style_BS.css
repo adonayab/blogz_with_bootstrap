@@ -9,15 +9,7 @@ body {
   background-color: #0d1318;
 }
 
-.navbar-nav .nav-link {
-  color: #ffffff;
-}
-
-/* .site-header .navbar-nav .nav-link {
-  color: #6bb46f;
-}
-
-.site-header .navbar-nav .nav-link:hover {
+/* .navbar-nav .nav-link {
   color: #ffffff;
 } */
 
@@ -43,7 +35,7 @@ a.article-title:hover {
 }
 
 .logout {
-  color: white;
+  color: rgb(153, 149, 149);
 }
 .logout:hover {
   color: rgb(209, 127, 127);
@@ -53,7 +45,7 @@ a.article-title:hover {
   color: gray;
 }
 
-input[type=submit] {
+.btns {
   background-color: rgb(5, 5, 5);
   border: none;
   color: white;
@@ -63,7 +55,7 @@ input[type=submit] {
   cursor: pointer;
   border-radius: 20px;
 }
-input[type=submit]:hover {
+.btns:hover {
   background-color:rgb(59, 59, 59);
   border: none;
   color: white;

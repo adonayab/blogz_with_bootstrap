@@ -33,7 +33,7 @@
           <form action="/logout" method="POST">
             <input type="submit" value="Logout" class="logout btn btn-default">
           </form>
-          <p class="nav-item nav-link">{{ session['email'] }}</p>
+          <a class="nav-item nav-link btn">{{ session['email'] }}</a>
         </div>
         {% endif %}
         {% if 'email' not in session %}
