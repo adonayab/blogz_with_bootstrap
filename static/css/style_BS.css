@@ -9,16 +9,17 @@ body {
   background-color: #0d1318;
 }
 
-/* .navbar-nav .nav-link {
-  color: #ffffff;
-} */
-
-h1, h2, h3, h4, h5, h6 {
-  color: #444444;
+h1, h4 {
+  color: #000000;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+h2 {
+  color: #424242;
+  font-weight:  bold;
 }
 
 .content-section {
-  background: #ffffff;
+  background: #fdfcfc;
   padding: 10px 20px;
   border: 1px solid #dddddd;
   border-radius: 3px;
