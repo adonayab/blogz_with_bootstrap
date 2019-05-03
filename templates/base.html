@@ -10,7 +10,7 @@
     crossorigin="anonymous">
 
   <link rel="stylesheet" type="text/css" href="{{  url_for('static', filename='./css/style_BS.css') }}">
-  <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
 
 </head>
@@ -26,8 +26,8 @@
         </div>
         <div class="nav navbar-nav navbar-left">
           <a class="nav-item nav-link" href="{{ url_for('index') }}">Home</a>
-          <a class="nav-item nav-link" href="{{ url_for('blog') }}">Main Blog Page</a>
-          <a class="nav-item nav-link" href="{{ url_for('newpost') }}">Add a Blog Entry</a>
+          <a class="nav-item nav-link" href="{{ url_for('blog') }}">Blogz</a>
+          <a class="nav-item nav-link" href="{{ url_for('newpost') }}">Post</a>
         </div>
 
         {% if 'email' in session %}
